@@ -1,10 +1,10 @@
 export class Item {
-    description: String;
+    description: string;
     date: Date;
-    state: 'done' | 'active' | 'undone'; 
+    state: 'done' | 'active' | 'undone' | "deleted"; 
     // respectivamente: resuelto | en proceso | pendiente
 
-    constructor(description: String, state?: 'done' | 'active' | 'undone') {
+    constructor(description: string, state?: 'done' | 'active' | 'undone') {
         this.description = description;
         this.date = new Date(Date.now());
         this.state = state ? state : 'undone';

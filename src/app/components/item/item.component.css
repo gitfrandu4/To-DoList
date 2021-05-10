@@ -55,3 +55,29 @@ body {
    ul li {
       list-style: none;
   }
+
+  .tarjeta{
+      background-color: white;
+      margin: 0.5em;
+  }
+
+  .btn-primary{
+      background-color: #275ab9;
+  }
+
+  .undone{
+    color: red;
+  }
+
+  .done {
+    color: gray;
+    text-decoration:line-through;
+  }
+  
+.active {
+    color: rgb(147, 216, 9);
+  }
+
+  .mat-card-actions{
+    color:black;
+  }

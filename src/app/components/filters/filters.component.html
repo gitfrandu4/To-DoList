@@ -1,0 +1,27 @@
+<mat-card>
+    <mat-card-content>
+      <h2 class="example-h2">Filtros</h2>
+  
+      <section>
+        <mat-slide-toggle class="filterSlide"
+            (change)="changeUndoneFilter($event)"
+            [color]="color"
+            [checked]="checked"
+            [disabled]="disabled">
+          Pendientes
+        </mat-slide-toggle>
+        <mat-slide-toggle class="filterSlide"
+            (change)="changeInProgressFilter($event)"
+            [color]="color"
+            [checked]="checked">
+          En curso
+        </mat-slide-toggle>
+        <mat-slide-toggle class="filterSlide"
+            (change)="changeDoneFilter($event)"
+            [color]="color"
+            [checked]="checked">
+          Completadas
+        </mat-slide-toggle>
+      </section>
+    </mat-card-content>
+  </mat-card>
