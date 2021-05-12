@@ -13,10 +13,7 @@ import { ThemePalette } from '@angular/material/core';
 
 export class AppComponent {
   
-  public title: String = 'To-Do List';
-  
   constructor(){
-  }
-
-  
+    
+  } 
 }

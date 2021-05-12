@@ -20,22 +20,6 @@ body {
     }
   }
   
-  label {
-    font-size: 1.5rem;
-    font-weight: bold;
-    display:block;
-    padding-bottom: 1rem;
-  }
-  
-  .lg-text-input {
-    width: 100%;
-    padding: 1rem;
-    border: 2px solid #000;
-    display: block;
-    box-sizing: border-box;
-    font-size: 1rem;
-  }
-  
   .btn-wrapper {
     margin-bottom: 2rem;
   }
@@ -65,19 +49,29 @@ body {
       background-color: #275ab9;
   }
 
-  .undone{
-    color: red;
-  }
-
   .done {
     color: gray;
     text-decoration:line-through;
   }
   
 .active {
-    color: rgb(147, 216, 9);
+    color: rgb(8, 116, 35);
+    font-style: italic;
   }
 
   .mat-card-actions{
     color:black;
+    padding: 0;
   }
+
+
+  .mat-card-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0;
+  }
+
+.prueba{
+  padding-top: 0.2em;
+}

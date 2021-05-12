@@ -34,6 +34,11 @@
         "description": "Escribir una reseña sobre el libro Rebecca",
         "date": "05/06/2021",
         "state": "done"
+      },
+      {
+        "description": "To-Do List: impedir la creación de tareas vacías",
+        "date": "05/06/2021",
+        "state": "active"
       }
     ]
 }

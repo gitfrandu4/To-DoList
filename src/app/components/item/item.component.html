@@ -1,9 +1,13 @@
 <mat-card class="tarjeta" [ngClass]="{'done': item.state === 'done',
                                       'active': item.state === 'active'}">
   <mat-card-title>
-    {{ index }}. {{item.description}}
+    <span class = "prueba">{{ index }}. {{item.description}}</span>
+    <span><button mat-icon-button color="primary" aria-label="Example icon button with a home icon">
+      <mat-icon>more_vert</mat-icon>
+    </button></span>
   </mat-card-title>	
-  <mat-card-actions>
+  
+  <mat-card-actions *ngIf="true">
     <button mat-button (click)="deleteTask()">
       <mat-icon>delete_outline</mat-icon>
     </button>

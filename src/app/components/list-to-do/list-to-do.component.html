@@ -1,9 +1,8 @@
-<label for="addItemInput">Tareas</label>
 <br>
-<input #newItem placeholder="Añadir tarea" (keyup.enter)="addItem(newItem.value); newItem.value = ''"
-    class="lg-text-input" id="addItemInput" />
+<input #newItem placeholder="Añadir tarea" id="addTask" (keyup.enter)="addItem(newItem.value); newItem.value = ''"
+    class="lg-text-input" name="hola" id="addItemInput" />
 
-<button class="btn-primary" (click)="addItem(newItem.value)">Añadir</button>
+<button mat-raised-button color="primary" class="btn-primary" (click)="addItem(newItem.value)">Añadir</button>
 
 <app-filters (CambioEstadoFiltroEvent)="applyFilters($event)"></app-filters>
 
@@ -17,8 +16,6 @@
                 [item]="item" 
                 [index]="i">
             </app-item>
-
         </div>
     </li>
-
 </ul>

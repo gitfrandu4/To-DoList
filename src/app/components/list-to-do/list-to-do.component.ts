@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MatSnackBar } from '@angular/material/snack-bar';
 
 import { Item } from 'src/app/models/item';
 
@@ -20,7 +21,7 @@ export class ListToDoComponent implements OnInit {
   
   public allItems: Array<Item> = [];
   
-  constructor() { 
+  constructor(private _snackBar: MatSnackBar) { 
     this.allItems = [
       new Item('Comer', 'done'),
       new Item('Terminar proyecto DAW'),
@@ -43,9 +44,15 @@ export class ListToDoComponent implements OnInit {
   }
 
   addItem(description: string) {
-    this.allItems.unshift(
-      new Item(description, 'undone'),
-    );
+    if (description != ""){
+      this.allItems.unshift(
+        new Item(description, 'undone'),
+      );
+      this._snackBar.open("¡Nueva tarea añadida a la lista!", "Cerrar", {
+        duration: 3000,
+        panelClass: ['mat-toolbar', 'mat-primary']
+      });
+    }
   }
 
   getItemJsonContent(): Array<Item>{

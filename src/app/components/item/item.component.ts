@@ -48,4 +48,8 @@ export class ItemComponent implements OnInit {
   changeState(evento: MatSlideToggleChange){
     this.item.state = evento.checked ? "active" : "undone";
   }
+
+  alert(){
+    alert("Hola");
+  }
 }

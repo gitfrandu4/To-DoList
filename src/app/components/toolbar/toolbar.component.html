@@ -1,0 +1,33 @@
+<mat-toolbar color="primary" class="flex-toolbar">
+    <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Menu">
+        <mat-icon>menu</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+        <button mat-menu-item>
+            <mat-icon>text_format</mat-icon>
+            <span>Ordenar tareas por nombre</span>
+        </button>
+        <button mat-menu-item disabled>
+            <mat-icon>calendar_today</mat-icon>
+            <span>Ordenar tareas por fecha de creación</span>
+        </button>
+        <button mat-menu-item>
+            <mat-icon>check_circle_outline</mat-icon>
+            <span>Ordenar tareas por estados</span>
+        </button>
+    </mat-menu>
+    <h1>
+        <mat-icon aria-hidden="false" aria-label="Example home icon">edit</mat-icon>
+        {{ title }}
+      </h1>
+      <div>
+    <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+        <mat-icon><a class="heart" target="_blank"  href="https://twitter.com/intent/tweet?hashtags=maythe4bewithyou&amp;original_referer=https%3A%2F%2Fpublish.twitter.com%2F&amp;ref_src=twsrc%5Etfw&amp;related=franciscodu4%2Celonmusk&amp;text=%C2%A1Incre%C3%ADble%20aplicaci%C3%B3n%20para%20organizar%20las%20tareas%20de%20nuestro%20d%C3%ADa%20a%20d%C3%ADa!%20To-Do%20List%20app%3A&amp;tw_p=tweetbutton&amp;url=https%3A%2F%2Fgitfrandu4.github.io%2FTo-DoList%2F">favorite</a></mat-icon>
+    </button>
+
+    <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+    <mat-icon><a class="share" target="_blank" href="https://twitter.com/intent/tweet?hashtags=%23task%20%23todolist&amp;original_referer=https%3A%2F%2Fpublish.twitter.com%2F&amp;ref_src=twsrc%5Etfw&amp;related=franciscodu4%2Celonmusk&amp;text=To-Do%20List%20App%3A%20&amp;tw_p=tweetbutton&amp;url=https%3A%2F%2Fgitfrandu4.github.io%2FTo-DoList%2F">share</a></mat-icon>
+</button>
+
+</div>
+</mat-toolbar>
