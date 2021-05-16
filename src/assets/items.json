@@ -1,44 +1,59 @@
 {
     "Item": [
       {
-        "description": "Aprender Angular",
-        "date": "01/06/2021",
-        "state": "undone"
-      },
-      {
-        "description": "Aprender Bases de Datos",
-        "date": "01/05/2021",
-        "state": "undone"
-      },
-      {
-        "description": "Entregar proyecto Angular",
-        "date": "05/06/2021",
-        "state": "undone"
-      },
-      {
-        "description": "Aprender POO",
-        "date": "05/06/2020",
+        "description": "To-Do List: Aprender Angular",
+        "date": "Sat May 15 2019 17:18:22 GMT+0100 (hora de verano de Europa occidental)",
         "state": "done"
       },
       {
-        "description": "Finalizar carrera",
-        "date": "05/06/2021",
+        "description": "To-Do List: Documentar trabajo",
+        "date": "Sat May 15 2021 17:18:22 GMT+0100 (hora de verano de Europa occidental)",
         "state": "active"
       },
       {
-        "description": "Empezar a leer Guerra y Paz",
-        "date": "05/06/2021",
-        "state": "undone"
-      },
-      {
-        "description": "Escribir una reseña sobre el libro Rebecca",
-        "date": "05/06/2021",
+        "description": "To-Do List: Implementar las funciones básicas CRUD",
+        "date": "Sat May 15 2018 17:18:22 GMT+0100 (hora de verano de Europa occidental)",
         "state": "done"
       },
       {
-        "description": "To-Do List: impedir la creación de tareas vacías",
-        "date": "05/06/2021",
+        "description": "GoodReads: Empezar a leer Guerra y Paz",
+        "date": "Sat May 15 2021 17:18:22 GMT+0100 (hora de verano de Europa occidental)",
+        "state": "undone"
+      },
+      {
+        "description": "GoodReads: Escribir una reseña sobre el libro Rebecca",
+        "date": "Sat May 15 2000 17:18:22 GMT+0100 (hora de verano de Europa occidental)",
+        "state": "done"
+      },
+      {
+        "description": "To-Do List: No permitir la creación de tareas vacías",
+        "date": "Sat May 15 2021 17:18:22 GMT+0100 (hora de verano de Europa occidental)",
         "state": "active"
+      },
+      {
+        "description": "To-Do List: Añadir selector de modo oscuro",
+        "date": "Sat May 15 2021 17:18:22 GMT+0100 (hora de verano de Europa occidental)",
+        "state": "undone"
+      },
+      {
+        "description": "To-Do List: Utilizar tres elementos de Angular Material",
+        "date": "Sat May 15 2021 17:18:22 GMT+0100 (hora de verano de Europa occidental)",
+        "state": "done"
+      },
+      {
+        "description": "To-Do List: Filtrar elementos",
+        "date": "Sat May 15 2021 17:18:22 GMT+0100 (hora de verano de Europa occidental)",
+        "state": "done"
+      },
+      {
+        "description": "To-Do List: Añadir estados (pendiente, resuelto, en proceso)",
+        "date": "Sat May 15 2021 17:18:22 GMT+0100 (hora de verano de Europa occidental)",
+        "state": "done"
+      },
+      {
+        "description": "To-Do List: Ordenar elementos",
+        "date": "Sat May 15 2021 17:18:22 GMT+0100 (hora de verano de Europa occidental)",
+        "state": "done"
       }
     ]
 }

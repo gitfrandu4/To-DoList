@@ -1,0 +1,15 @@
+.page-footer{
+    color: #923228;
+    position: sticky;
+    padding: 1em;
+}
+
+.footer-name{
+    color: #da5c18;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, #833f43, #f53f20, #f9c7b7) !important;
+}

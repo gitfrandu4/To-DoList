@@ -72,6 +72,12 @@ body {
     margin-bottom: 0;
   }
 
-.prueba{
+.item-task{
   padding-top: 0.2em;
+  text-align: left;
+}
+
+.mat-card{
+  padding-top: 10px;
+  padding-bottom: 10px;
 }

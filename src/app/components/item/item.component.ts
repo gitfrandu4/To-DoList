@@ -16,23 +16,40 @@ export class ItemComponent implements OnInit {
   @Input() index: number = 0;
 
   public color: ThemePalette = 'warn';
-  public checked: boolean = this.item.state=="active" ? true : false;
+  public checked: boolean;
   public disabled: boolean = false;
+  public expand: boolean = false;
 
   public showEditTask: boolean = false;
 
+  /**
+   * Constructor del componente ItemComponent
+   */
   constructor() { 
     this.checked = this.item.state=="active" ? true : false;
   }
 
+  // Este hook inicializa el componente una vez recibidas las propiedades de entrada
   ngOnInit(): void {
     this.checked = this.item.state=="active" ? true : false;
   }
-
+  
+  // Marca el estado de la tarea como "deleted"
   deleteTask(){
     this.item.state = "deleted";
   }
 
+  // Marca el estado de la tarea como "deleted"
+  completeTask(){
+    this.item.state = "done";
+  }
+  
+  // Modifica el estado de la tarea entre "active" y "undone"
+  changeState(evento: MatSlideToggleChange){
+    this.item.state = evento.checked ? "active" : "undone";
+  }
+
+  // Asigna nuevos valores a los atributos de las tareas cuando se modifican
   editTask(event: any){
     this.item.state = event.state;
     this.item.date = event.date;
@@ -41,15 +58,8 @@ export class ItemComponent implements OnInit {
     this.showEditTask = false;
   }
 
-  completeTask(){
-    this.item.state = "done";
-  }
-
-  changeState(evento: MatSlideToggleChange){
-    this.item.state = evento.checked ? "active" : "undone";
-  }
-
-  alert(){
-    alert("Hola");
+  // Muestra/Oculta las opciones (completar, editar, ...) para cada tarea
+  expandOptions(){
+    this.expand = !this.expand;
   }
 }
