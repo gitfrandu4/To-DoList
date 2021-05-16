@@ -1,5 +1,7 @@
 body {
     font-family: Helvetica, Arial, sans-serif;
+    background-image: url('src/assets/images/background.jpg') !important;
+    background-size: cover;
   }
   
   .btn-wrapper {
