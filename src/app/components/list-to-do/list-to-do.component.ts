@@ -36,7 +36,6 @@ export class ListToDoComponent implements OnInit {
       this.allItems = [
       new Item('CMS: Aprender fundamentos Wordpress', 'active'),
       new Item('CMS: Aprender fundamentos Joomla', 'undone'),
-      new Item('B1 Curse: Redacción sobre un personaje histórico', 'undone'),
     ];
     
     // Concatenamos los elementos con los definidos en el fichero JSON
