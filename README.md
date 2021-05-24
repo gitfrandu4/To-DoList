@@ -95,7 +95,12 @@ Para el almacenamiento de las tareas se ha llevado a cabo mediante un fichero JS
 
 La aplicación web se ha desplegado utilizando GitHub Pages, un espacio gratuito de la plataforma GitHub para almacenar los archivos que ejecuta un sitio web y alojar este sitio de manera estática: la información no se almacena en una base de datos sino que ya está contenida en los archivos del sitio.
 
-## Imagen Background: Milky Way Center
+```bash
+ng build --prod --base-href "./"
+ngh
+```
+
+## Background: Milky Way Center
 
 **Fuente de la imagen**: https://www.flickr.com/photos/geckzilla/30386605114/
 
@@ -103,3 +108,4 @@ La aplicación web se ha desplegado utilizando GitHub Pages, un espacio gratuito
     <img src="./src/assets/images/background.jpg" width="350" alt="Fondo utilizado en la aplicación: Milky Way Center">
 </p>
 
+---
